@@ -2,7 +2,8 @@ public class DataTypes {
     public static void main(String[] args) {
         divisionWithRemainders(48, 6);
         sumOfDigitsOfNumber(10);
-        roundingOfNumber(2.8);
+        roundingOfNumber(2.0);
+      sumOfDigitsOf3Numbers(321);
 
     }
     public static void divisionWithRemainders(int q, int w){
@@ -14,5 +15,9 @@ public class DataTypes {
     public static void roundingOfNumber(double n){
         int a;
         System.out.println(a = (int) (0.5 + n));
+    }
+    public static void sumOfDigitsOf3Numbers(int n){
+        System.out.println((n/100) + (n%100)/10 + n%10);
+
     }
 }
