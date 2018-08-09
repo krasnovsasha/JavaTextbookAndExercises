@@ -19,4 +19,22 @@ public class LogicalOperators {
            System.out.println("Числа " + m + " и " + n + " находятся на одинаковом расстоянии от числа " + a);
 
     }
+    public static void quadraticEquation(double a, double b, double c){
+        double x1;
+        double x2;
+        double d = 0;
+        if (a == 0 && b == 0 && c != 0)
+            System.out.println("Уравнение решений не имеет");
+        else if (a == 0 && b == 0 && c == 0)
+            System.out.println("Уравнение имеет бесчисленное множество решений");
+        else
+            d = (b*b)-(4*a*c);
+            x1 = ((-b+(Math.pow(d, 0.5)))/(a*2));
+            x2 = ((-b-(Math.pow(d, 0.5)))/(a*2));
+            if (d < 0)
+                System.out.println("Дискриминант " + d + " отрицательный. Корни уравнения комплексные");
+            else
+        System.out.println("Корни уравнения равны: " + x1 + " " + x2);
+    }
+
 }
