@@ -8,4 +8,15 @@ public class LogicalOperators {
         else
             System.out.println("Число нечетное");
     }
+    public static void theNearestNumber(double a, double m, double n){
+       if ((Math.abs(a-m)<Math.abs(a-n)) && (m!=n)){
+           System.out.println("Число " + m + " ближе к числу " + a + " чем число " + n);
+       }
+       else if ((Math.abs(a-n)<Math.abs(a-m)) && (m!=n)){
+           System.out.println("Число " + n + " ближе к числу " + a + " чем число " + m);
+       }
+       else
+           System.out.println("Числа " + m + " и " + n + " находятся на одинаковом расстоянии от числа " + a);
+
+    }
 }
